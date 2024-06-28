@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Netflix Movie Recommendation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/CSS/style.css">
+</head>
+<body>
+  <div class="navbar">
+    <span class="navbar-title">Welcome to Netflix Movie Recommendation</span>
+    <div>
+      <a href="#">Home</a>
+      <a href="https://www.linkedin.com/in/mohan-krishna-battala/">About Me</a>
+      <a href="https://github.com/MohanKrishna-2003/Netflix-User-Recommendation-Using-Apriori-Algortihm/blob/main/README.md">How it works?</a>
+    </div>
+  </div>
+  
+  <main>
+    <div class="centered-content">
+      <h1>Insert Your Dataset Here</h1>
+      <div class="file-upload">
+        <input type="file" id="file-input" accept=".csv" required>
+        <label for="file-input">Choose a CSV file</label>
+        <button id="upload-btn">Upload</button>
+      </div>
+
+      <div id="processing-animation" class="hidden">
+        <div class="spinner"></div>
+        <p id="load">Processing your dataset...</p>
+      </div>
+    </div>
+
+    <h1><span id="res"></span></h1>
+    <div id="result-container">
+    </div>
+
+    <div id="movie-display" style="
+    color: white;"></div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; 2023 Mohan Krishna. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <p>Designed and developed by MOHAN KRISHNA BATTALA</p>
+        </div>
+      </div>
+    </footer>
+    
+
+  </main>
+  <script src="/static/JS/script.js"></script>
+</body>
+</html>
